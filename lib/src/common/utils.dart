@@ -1,0 +1,1 @@
+typedef BaseAllocate<T> = String Function(T);
