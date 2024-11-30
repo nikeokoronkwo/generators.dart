@@ -1,6 +1,6 @@
 import 'package:generator/src/common/visitors.dart';
 import 'package:generator/src/swift/specs/reference.dart';
-import 'package:generator/src/swift/specs/typedef.dart';
+import 'package:generator/src/swift/specs/typealias.dart';
 import 'package:meta/meta.dart';
 
 @optionalTypeArgs
