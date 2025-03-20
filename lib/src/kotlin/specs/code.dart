@@ -11,7 +11,3 @@ abstract class Code implements Spec {
   @override
   R accept<R>(covariant CodeVisitor<R> visitor, [R? context]);
 }
-
-abstract class Block implements Built<Block, BlockBuilder>, Code, Spec {
-
-}

@@ -15,11 +15,3 @@ abstract class Code implements Spec {
 abstract class CodeVisitor<T> implements SpecVisitor<T> {
   
 }
-
-abstract class Block implements Built<Block, BlockBuilder>, Code, Spec {
-  
-}
-
-abstract class BlockBuilder implements Builder<Block, BlockBuilder> {
-  
-}

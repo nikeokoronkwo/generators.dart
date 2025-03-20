@@ -1,5 +1,8 @@
 
 
+import 'package:generator/src/kotlin/specs/typealias.dart';
+import 'package:generator/src/kotlin/visitors.dart';
+
 class KotlinEmitter extends Object 
 //  with CodeEmitter
   implements SpecVisitor<StringSink> {

@@ -40,16 +40,16 @@ abstract class TypeAliasBuilder extends Object
 
   TypeAliasBuilder._();
 
+  @override
+  ListBuilder<Expression> decorators = ListBuilder<Expression>();
+
+  @override
+  ListBuilder<String> docs = ListBuilder<String>();
+
+  @override
+  ListBuilder<Reference> types = ListBuilder<Reference>();
+
   String? name;
 
   Expression? definition;
-
-  @override
-  ListBuilder<Expression> get decorators => ListBuilder<Expression>();
-
-  @override
-  ListBuilder<String> get docs => ListBuilder<String>();
-
-  @override
-  ListBuilder<Reference> get types => ListBuilder<Reference>();
 }

@@ -34,7 +34,7 @@ abstract class TypeAlias extends Object
 
 abstract class TypeAliasBuilder extends Object
     with HasAnnotationsBuilder, HasGenericsBuilder, HasKDocBuilder
-    implements Builder<TypeAlias, TypeAliasBuilder>, Spec {
+    implements Builder<TypeAlias, TypeAliasBuilder> {
   factory TypeAliasBuilder() = _$TypeAliasBuilder;
 
   TypeAliasBuilder._();
@@ -44,11 +44,11 @@ abstract class TypeAliasBuilder extends Object
   Expression? definition;
 
   @override
-  ListBuilder<Expression> get annotations => ListBuilder<Expression>();
+  ListBuilder<Expression> annotations = ListBuilder<Expression>();
 
   @override
-  ListBuilder<String> get docs => ListBuilder<String>();
+  ListBuilder<String> docs = ListBuilder<String>();
 
   @override
-  ListBuilder<Reference> get types => ListBuilder<Reference>();
+  ListBuilder<Reference> types = ListBuilder<Reference>();
 }
