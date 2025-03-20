@@ -1,5 +1,5 @@
 import 'package:generator/src/swift/specs/reference.dart';
-import 'package:generator/src/swift/specs/typedef.dart';
+import 'package:generator/src/swift/specs/typealias.dart';
 import 'package:generator/src/swift/visitors.dart';
 
 class SwiftEmitter extends Object 
@@ -19,7 +19,7 @@ class SwiftEmitter extends Object
     spec.docs.map((m) => m.startsWith("///") ? m : "///$m").forEach(out.writeln);
     // add annotations
     for (var a in spec.decorators) {
-	visitDecorator(a, out);
+	    visitDecorator(a, out);
     }
     // write out typealias
     out.write('typealias ${spec.name}');

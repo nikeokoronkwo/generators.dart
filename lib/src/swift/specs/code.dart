@@ -1,7 +1,6 @@
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
 
-import 'package:generator/src/common/utils.dart';
 import 'package:generator/src/swift/base.dart';
 import 'package:generator/src/swift/specs/expression.dart';
 import 'package:generator/src/swift/specs/reference.dart';
@@ -9,17 +8,12 @@ import 'package:generator/src/swift/visitors.dart';
 
 part 'code.g.dart';
 
-typedef Allocate = BaseAllocate<Reference>;
-
 abstract class Code implements Spec {
+  /// Simple code based on a static string
   const factory Code(String code) = NormalCode._;
 
   @override
-  R accept<R>(covariant CodeVisitor<R> visitor, [R? context]) =>
-      visitor.visitCode(this, context);
-
-  @override
-  String toString() => code;
+  R accept<R>(covariant CodeVisitor<R> visitor, [R? context]);
 }
 
 class NormalCode implements Code {

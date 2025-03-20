@@ -1,6 +1,7 @@
-import 'package:generator/src/swift/base.dart';
-import 'package:generator/src/swift/specs/expression.dart';
-import 'package:generator/src/swift/visitors.dart';
+
+import 'package:generator/src/kotlin/base.dart';
+import 'package:generator/src/kotlin/specs/expression.dart';
+import 'package:generator/src/kotlin/visitors.dart';
 import 'package:meta/meta.dart';
 
 
@@ -27,4 +28,7 @@ class Reference extends Expression implements Spec {
 
   @override
   bool operator ==(Object other) => other is Reference && other.symbol == symbol && other.lib == lib;
+
+  @override
+  R accept<R>(SpecVisitor<R> visitor, [R? context]) => visitor.visitReference(this, context);
 }
