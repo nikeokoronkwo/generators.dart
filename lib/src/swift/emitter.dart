@@ -14,7 +14,7 @@ class SwiftEmitter extends Object
   @override
   StringSink visitTypeAlias(TypeAlias spec, [StringSink? context]) {
     // TODO: implement visitExpression
-    final out = output ??= StringBuffer();
+    final out = context ??= StringBuffer();
     // add documentation
     spec.docs.map((m) => m.startsWith("///") ? m : "///$m").forEach(out.writeln);
     // add annotations

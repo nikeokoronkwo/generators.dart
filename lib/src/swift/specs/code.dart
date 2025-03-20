@@ -1,5 +1,6 @@
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
+
 import 'package:generator/src/common/utils.dart';
 import 'package:generator/src/swift/base.dart';
 import 'package:generator/src/swift/specs/expression.dart';
@@ -14,7 +15,11 @@ abstract class Code implements Spec {
   const factory Code(String code) = NormalCode._;
 
   @override
-  R accept<R>(covariant CodeVisitor<R> visitor, [R? context]);
+  R accept<R>(covariant CodeVisitor<R> visitor, [R? context]) =>
+      visitor.visitCode(this, context);
+
+  @override
+  String toString() => code;
 }
 
 class NormalCode implements Code {
