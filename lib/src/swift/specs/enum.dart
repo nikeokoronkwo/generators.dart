@@ -8,6 +8,7 @@ import 'package:generator/src/swift/mixins/generics.dart';
 import 'package:generator/src/swift/mixins/swiftdocc.dart';
 import 'package:generator/src/swift/specs/expression.dart';
 import 'package:generator/src/swift/specs/reference.dart';
+import 'package:generator/src/swift/visitors.dart';
 import 'package:meta/meta.dart';
 
 part 'enum.g.dart';
@@ -28,7 +29,7 @@ abstract class Enum extends Object
   bool get indirect;
 
   /// The raw, underlying type
-  Reference get raw;
+  Reference? get raw;
 
   // TODO: Constructor
 
@@ -50,6 +51,13 @@ abstract class Enum extends Object
 
   @override
   BuiltList<String> get docs;
+
+  @override
+  R accept<R>(
+    SpecVisitor<R> visitor, [
+    R? context,
+  ]) =>
+      visitor.visitEnum(this, context);
 }
 
 abstract class EnumBuilder extends Object
@@ -61,7 +69,9 @@ abstract class EnumBuilder extends Object
 
   String? name;
 
-  bool? indirect;
+  bool indirect = false;
+
+  Reference? raw;
 
   ListBuilder<EnumValue> values = ListBuilder<EnumValue>();
 
@@ -115,5 +125,20 @@ abstract class EnumValueBuilder extends Object
   String? name;
 
   bool? indirect;
+
+  /// Arguments if this is an enum that contains arguments
+  ListBuilder<Reference> arguments = ListBuilder<Reference>();
+
+  /// The value assigned to the enum
+  Expression? value;
+
+  @override
+  ListBuilder<Expression> decorators = ListBuilder<Expression>();
+
+  @override
+  ListBuilder<Reference> types = ListBuilder<Reference>();
+
+  @override
+  ListBuilder<String> docs = ListBuilder<String>();
 
 }

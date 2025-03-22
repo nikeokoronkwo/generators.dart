@@ -1,5 +1,6 @@
 import 'package:generator/src/swift/base.dart';
 import 'package:generator/src/swift/specs/expression.dart';
+import 'package:generator/src/swift/specs/type_reference.dart';
 import 'package:generator/src/swift/visitors.dart';
 import 'package:meta/meta.dart';
 
@@ -29,4 +30,8 @@ class Reference extends Expression implements Spec {
 
   @override
   bool operator ==(Object other) => other is Reference && other.symbol == symbol && other.lib == lib;
+
+  Reference get type => TypeReference((b) => b
+    ..lib = lib
+    ..symbol = symbol);
 }
