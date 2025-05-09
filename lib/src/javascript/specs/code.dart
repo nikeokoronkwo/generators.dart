@@ -1,9 +1,9 @@
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
-import 'package:generator/src/javascript/base.dart';
-import 'package:generator/src/javascript/specs/expression.dart';
-import 'package:generator/src/javascript/specs/reference.dart';
-import 'package:generator/src/javascript/visitors.dart';
+import 'package:generators/src/javascript/base.dart';
+import 'package:generators/src/javascript/specs/expression.dart';
+import 'package:generators/src/javascript/specs/reference.dart';
+import 'package:generators/src/javascript/visitors.dart';
 
 part 'code.g.dart';
 

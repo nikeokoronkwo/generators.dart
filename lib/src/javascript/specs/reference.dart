@@ -1,7 +1,7 @@
 
-import 'package:generator/src/javascript/base.dart';
-import 'package:generator/src/javascript/specs/expression.dart';
-import 'package:generator/src/javascript/visitors.dart';
+import 'package:generators/src/javascript/base.dart';
+import 'package:generators/src/javascript/specs/expression.dart';
+import 'package:generators/src/javascript/visitors.dart';
 import 'package:meta/meta.dart';
 
 // TODO: get expression

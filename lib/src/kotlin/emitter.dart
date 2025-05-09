@@ -1,7 +1,7 @@
 
 
-import 'package:generator/src/kotlin/specs/typealias.dart';
-import 'package:generator/src/kotlin/visitors.dart';
+import 'package:generators/src/kotlin/specs/typealias.dart';
+import 'package:generators/src/kotlin/visitors.dart';
 
 class KotlinEmitter extends Object 
 //  with CodeEmitter

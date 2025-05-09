@@ -1,6 +1,6 @@
-import 'package:generator/src/swift/specs/reference.dart';
-import 'package:generator/src/swift/specs/typealias.dart';
-import 'package:generator/src/swift/visitors.dart';
+import 'package:generators/src/swift/specs/reference.dart';
+import 'package:generators/src/swift/specs/typealias.dart';
+import 'package:generators/src/swift/visitors.dart';
 
 class SwiftEmitter extends Object 
 //  with CodeEmitter

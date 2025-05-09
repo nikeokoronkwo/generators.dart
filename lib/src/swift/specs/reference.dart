@@ -1,6 +1,6 @@
-import 'package:generator/src/swift/base.dart';
-import 'package:generator/src/swift/specs/expression.dart';
-import 'package:generator/src/swift/visitors.dart';
+import 'package:generators/src/swift/base.dart';
+import 'package:generators/src/swift/specs/expression.dart';
+import 'package:generators/src/swift/visitors.dart';
 import 'package:meta/meta.dart';
 
 // TODO: get expression

@@ -1,4 +1,4 @@
-import 'package:generator/generator.dart';
+import 'package:generators/generators.dart';
 
 void main() {
   var awesome = Awesome();

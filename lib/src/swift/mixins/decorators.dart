@@ -1,5 +1,5 @@
 import 'package:built_collection/built_collection.dart';
-import 'package:generator/src/swift/specs/expression.dart';
+import 'package:generators/src/swift/specs/expression.dart';
 
 /// A type of AST node that can have metadata [decorators].
 abstract mixin class HasDecorators {

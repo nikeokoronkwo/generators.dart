@@ -1,5 +1,5 @@
 import 'package:built_collection/built_collection.dart';
-import 'package:generator/src/kotlin/specs/expression.dart';
+import 'package:generators/src/kotlin/specs/expression.dart';
 
 /// A type of AST node that can have metadata [annotations].
 abstract mixin class HasAnnotations {

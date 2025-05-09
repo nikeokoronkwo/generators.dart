@@ -1,7 +1,7 @@
 
-import 'package:generator/src/javascript/base.dart';
-import 'package:generator/src/javascript/specs/code.dart';
-import 'package:generator/src/javascript/visitors.dart';
+import 'package:generators/src/javascript/base.dart';
+import 'package:generators/src/javascript/specs/code.dart';
+import 'package:generators/src/javascript/visitors.dart';
 import 'package:meta/meta.dart';
 
 /// Represents a JS/TS expression

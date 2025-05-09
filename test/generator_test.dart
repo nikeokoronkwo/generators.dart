@@ -1,4 +1,4 @@
-import 'package:generator/generator.dart';
+import 'package:generators/generators.dart';
 import 'package:test/test.dart';
 
 void main() {

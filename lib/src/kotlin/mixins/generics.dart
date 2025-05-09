@@ -1,5 +1,5 @@
 import 'package:built_collection/built_collection.dart';
-import 'package:generator/src/kotlin/specs/reference.dart';
+import 'package:generators/src/kotlin/specs/reference.dart';
 
 abstract mixin class HasGenerics {
   BuiltList<Reference> get types;

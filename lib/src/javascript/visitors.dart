@@ -1,6 +1,6 @@
 
 
-import 'package:generator/src/javascript/specs/reference.dart';
+import 'package:generators/src/javascript/specs/reference.dart';
 import 'package:meta/meta.dart';
 
 @optionalTypeArgs

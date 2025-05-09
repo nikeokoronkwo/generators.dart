@@ -1,6 +1,6 @@
-import 'package:generator/src/kotlin/specs/reference.dart';
-import 'package:generator/src/kotlin/specs/typealias.dart';
-import 'package:generator/src/kotlin/specs/expression.dart';
+import 'package:generators/src/kotlin/specs/reference.dart';
+import 'package:generators/src/kotlin/specs/typealias.dart';
+import 'package:generators/src/kotlin/specs/expression.dart';
 import 'package:meta/meta.dart';
 
 @optionalTypeArgs

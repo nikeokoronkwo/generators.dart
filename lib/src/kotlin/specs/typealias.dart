@@ -1,12 +1,12 @@
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
-import 'package:generator/src/kotlin/base.dart';
-import 'package:generator/src/kotlin/mixins/decorators.dart';
-import 'package:generator/src/kotlin/mixins/generics.dart';
-import 'package:generator/src/kotlin/mixins/kdoc.dart';
-import 'package:generator/src/kotlin/specs/expression.dart';
-import 'package:generator/src/kotlin/specs/reference.dart';
-import 'package:generator/src/kotlin/visitors.dart';
+import 'package:generators/src/kotlin/base.dart';
+import 'package:generators/src/kotlin/mixins/decorators.dart';
+import 'package:generators/src/kotlin/mixins/generics.dart';
+import 'package:generators/src/kotlin/mixins/kdoc.dart';
+import 'package:generators/src/kotlin/specs/expression.dart';
+import 'package:generators/src/kotlin/specs/reference.dart';
+import 'package:generators/src/kotlin/visitors.dart';
 import 'package:meta/meta.dart';
 
 part 'typealias.g.dart';

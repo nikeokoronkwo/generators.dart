@@ -1,10 +1,10 @@
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
 
-import 'package:generator/src/swift/base.dart';
-import 'package:generator/src/swift/specs/expression.dart';
-import 'package:generator/src/swift/specs/reference.dart';
-import 'package:generator/src/swift/visitors.dart';
+import 'package:generators/src/swift/base.dart';
+import 'package:generators/src/swift/specs/expression.dart';
+import 'package:generators/src/swift/specs/reference.dart';
+import 'package:generators/src/swift/visitors.dart';
 
 part 'code.g.dart';
 

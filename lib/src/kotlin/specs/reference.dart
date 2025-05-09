@@ -1,7 +1,7 @@
 
-import 'package:generator/src/kotlin/base.dart';
-import 'package:generator/src/kotlin/specs/expression.dart';
-import 'package:generator/src/kotlin/visitors.dart';
+import 'package:generators/src/kotlin/base.dart';
+import 'package:generators/src/kotlin/specs/expression.dart';
+import 'package:generators/src/kotlin/visitors.dart';
 import 'package:meta/meta.dart';
 
 

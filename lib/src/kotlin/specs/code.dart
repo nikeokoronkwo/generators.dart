@@ -1,7 +1,7 @@
 import 'package:built_value/built_value.dart';
-import 'package:generator/src/kotlin/base.dart';
-import 'package:generator/src/kotlin/specs/reference.dart';
-import 'package:generator/src/kotlin/visitors.dart';
+import 'package:generators/src/kotlin/base.dart';
+import 'package:generators/src/kotlin/specs/reference.dart';
+import 'package:generators/src/kotlin/visitors.dart';
 
 typedef Allocate = String Function(Reference);
 
